@@ -7,6 +7,7 @@ import {Link, Route, Routes} from "react-router-dom"
 import Home from './Home'
 import Users from './Users'
 import Products from './Products'
+import ProductsByCategorie from './ProductsByCategorie'
 
 class App extends Component {
   render(){
@@ -15,13 +16,13 @@ class App extends Component {
       <Link to="/" exact="true"></Link>
       <Link to= "/users"></Link>
       <Link to= "/products"></Link>
+      <Link to= "/products/categories"></Link>
+
       <Routes>
         <Route path= "/" element={<Home/>}/>
         <Route path="/users" element={<Users/>}/>
-        <Route path="/users/:id" exact={true}  element={<Users/>}/>
         <Route path="/products" element={<Products/>}/>
-        <Route path="/products/:id" exact={true} element={<Users/>}/>
-
+        <Route path="/products/categories" element={<ProductsByCategorie/>}/>
       </Routes>
     </div>
     
