@@ -30,6 +30,38 @@ th,td{
   align-self: center;
   margin: 0;
 }
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+.tr-tabla{
+  height: 2px;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.td-tabla{
+  height: 5px;
+
+}
+.tabla-usuarios th {
+  background-color: #f2f2f2;
+}
+
+.tabla-usuarios img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
