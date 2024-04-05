@@ -35,6 +35,7 @@ class TablaFilas extends Component{
 
 
     render(){
+        const sortedProducts = this.state.products.sort((a, b) => a.id - b.id);
     return(
         <div className="row">
     <tbody>         
@@ -46,7 +47,7 @@ class TablaFilas extends Component{
             <th>Estado</th>
             <th>Imagen</th>
         </tr>
-        {this.state.products.map(product => (
+        {sortedProducts.map(product => (
             <tr key={product.id}>
                 <td className="td-tabla">{product.name}</td>
                 <td>{product.detail.price}</td>

@@ -35,6 +35,7 @@ class TablaFilas extends Component{
 
 
     render(){
+        const sortedUsers = this.state.users.sort((a, b) => a.id - b.id);
     return(
         <div className="row">
     <tbody>         
@@ -44,7 +45,7 @@ class TablaFilas extends Component{
             <th>Teléfono</th>
             <th>Imagen</th>
         </tr>
-        {this.state.users.map(user => (
+        {sortedUsers.map(user => (
             <tr key={user.id}>
                 <td className="td-tabla">{user.name}</td>
                 <td>{user.email}</td>
