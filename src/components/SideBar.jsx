@@ -36,7 +36,7 @@ class SideBar extends Component{
 		<li className="nav-item">
 			<Link className="nav-link" to="/products/categories">
 				<i className="fas fa-fw fa-chart-area"></i>
-				<span>Productos por categoría</span>
+				<span>Categorías</span>
             </Link>
 		</li>
         <hr className="sidebar-divider d-none d-md-block"/>
