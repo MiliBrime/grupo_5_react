@@ -1,4 +1,5 @@
-import React, {Component} from "react"
+import React, {Component} from "react";
+import {Link} from "react-router-dom"
 
 class LastProduct extends Component{
     constructor(props) {
@@ -67,7 +68,7 @@ class LastProduct extends Component{
                     <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: '15rem'}} src={`http://localhost:3010/${lastUser.img}`} alt=" Last User Created "/>
                     </div>
                     <p> {lastUser.name}</p>                    
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle</a>
+                    <Link className="btn btn-danger"  rel="nofollow" to="/users/detail">Ver detalle</Link>
                 </div>
             </div>
         </div>
@@ -81,7 +82,7 @@ class LastProduct extends Component{
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: '15rem'}} src={`http://localhost:3010/${lastProduct.img}`} alt=" Last Product Created "/>
                     </div>
                     <p> {lastProduct.name}</p>                    
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle</a>
+                    <Link className="btn btn-danger"  rel="nofollow" to="/products/detail">Ver detalle</Link>
                 </div>
             </div>
         </div>

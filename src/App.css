@@ -2,6 +2,9 @@ body, #root{
   background-image: linear-gradient(to top right, #ABD0BF, #E6F1EC);
   width: 100%;
 }
+.precio{
+  font-weight: bold;
+}
 .ultimo{
   
     background-color: #E6F1EC;
