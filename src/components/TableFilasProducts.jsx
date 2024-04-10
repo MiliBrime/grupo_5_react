@@ -1,4 +1,5 @@
 import React,{ Component } from "react";
+import {Link} from 'react-router-dom';
 
 class TablaFilas extends Component{
     constructor(props) {
@@ -49,7 +50,7 @@ class TablaFilas extends Component{
         </tr>
         {sortedProducts.map(product => (
             <tr key={product.id}>
-                <td className="td-tabla">{product.name}</td>
+                <td className="td-tabla"><Link to={`http://localhost:3010/products/detail/${product.id}`} target="blank">{product.name}</Link></td>
                 <td>{product.detail.price}</td>
                 <td>{product.detail.brand}</td>
                 <td>{product.detail.shortDescription}</td>
